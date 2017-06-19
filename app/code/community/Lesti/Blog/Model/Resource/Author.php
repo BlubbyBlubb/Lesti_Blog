@@ -64,7 +64,7 @@ class Lesti_Blog_Model_Resource_Author extends Mage_Core_Model_Resource_Db_Abstr
             )
             ->join(
                 array('bp' => $this->getTable('blog/post')),
-                'au.user_id = bp.author_id',
+                'ba.author_id = bp.author_id',
                 array()
             )
             ->join(
